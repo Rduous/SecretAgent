@@ -9,7 +9,6 @@ body {
 .flex {
   display: flex;
   margin: auto;
-  width: 960px;
 }
 
 header .flex {
@@ -64,7 +63,7 @@ header img {
   justify-content: space-between;
 }
 
-.menu a {
+.menu span {
   text-decoration-line: none;
   color: white;
   font-size: 1rem;
@@ -77,6 +76,7 @@ header img {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
 .product {
   width: 30%;
   display: flex;
@@ -104,4 +104,53 @@ header img {
 
 .datum {
   width: 35%;
+}
+
+/* The biggest version */
+@media only screen and (min-width: 960px) {
+  .flex {
+    width: 960px;
+  }
+
+  .menu .dropdown {
+    display: none;
+  }
+}
+
+/* The medium and small versions */
+@media only screen and (max-width: 960px) {
+
+  .menu .item {
+    display: none;
+  }
+
+  .menu .flex {
+    justify-content: center;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
+/* The medium version */
+@media only screen and (min-width: 470px) and (max-width: 960px) {
+  .flex {
+    width: 470px;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+/* The small version */
+@media only screen and (max-width: 470px) {
+  .watch {
+    display: none;
+  }
+
+  .product {
+    width: 90%;
+  }
 }

@@ -3,56 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>Secret Agent Supply Co</title>
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
   </head>
   <body>
 
-    <header>
-      <img src="./resources/images/logo.png" alt="Secret Agent Supply logo">
-      <p class="all-caps">Secret Agent Supply Co</p>
+    <header class="black-background">
+      <div class="flex">
+        <img src="./resources/images/logo.png" alt="Secret Agent Supply logo">
+        <p class="all-caps">Secret Agent Supply Co</p>
+      </div>
     </header>
 
     <div class="banner">
-      <p>New Arrival</p>
-      <p class="all-caps">Sport Bikes and Motorcycles</p>
-    </div>
-
-    <nav>
-      <a href="#">Eyewear</a>
-      <a href="#">Apparel</a>
-      <a href="#">Gadgets</a>
-      <a href="#">Vehicles</a>
-      <a href="#">Classes</a>
-      <a href="#">Contacts</a>
-    </nav>
-
-    <div class="products">
-      <div class="product">
-        <img src="./resources/images/pen.png" alt="A fountain pen">
-        <p class="product-description">Exploding Pen</p>
-      </div>
-      <div class="product">
-        <img src="./resources/images/watch.png" alt="A men's watch">
-        <p class="product-description">Cellular Watch</p>
-      </div>
-      <div class="product">
-        <img src="./resources/images/glasses.png" alt="Sunglasses">
-        <p class="product-description">Thermal Glasses</p>
+      <div class="flex featured-holder">
+        <div class="featured black-background all-caps">
+          <p>New Arrival</p>
+          <p class="title">Sport Bikes and Motorcycles</h1>
+        </div>
       </div>
     </div>
 
-    <div class="info">
-      <div class="location">
-        <p class="title">Location</p>
+    <div class="menu">
+      <nav class="flex">
+        <a href="#">Eyewear</a>
+        <a href="#">Apparel</a>
+        <a href="#">Gadgets</a>
+        <a href="#">Vehicles</a>
+        <a href="#">Classes</a>
+        <a href="#">Contacts</a>
+      </nav>
+    </div>
+
+    <div class="flex products">
+      <div class="product">
+        <div class="product-image">
+          <img src="./resources/images/pen.png" alt="A fountain pen">
+        </div>
+        <p class="black-background">Exploding Pen</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./resources/images/watch.png" alt="A men's watch">
+        </div>
+        <p class="black-background">Cellular Watch</p>
+      </div>
+      <div class="product">
+        <div class="product-image">
+          <img src="./resources/images/glasses.png" alt="Sunglasses">
+        </div>
+        <p class="black-background">Thermal Glasses</p>
+      </div>
+    </div>
+
+    <div class="flex info">
+      <div class="datum">
+        <p class="black-background">Location</p>
         <p>-47.346436, 84.32354</p>
       </div>
-      <div class="Time">
-        <p class="title">Hours</p>
+      <div class="datum">
+        <p class="black-background">Hours</p>
         <p>0800 - 1800</p>
       </div>
     </div>
 
-    <footer>Copyright Secret Agent Supply Inc.</footer>
+    <footer class="black-background">
+      <div class="flex">
+        <p>Copyright Secret Agent Supply Inc.</p>
+      </div>
+    </footer>
+
   </body>
 </html>
